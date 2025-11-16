@@ -16,13 +16,7 @@
 
 const button = document.getElementById("btn") as HTMLButtonElement;
 const message = document.getElementById("message") as HTMLParagraphElement;
-let compteur = 0;
 
-button.onclick = function() {
-    compteur++;
-}
 
-button.onclick = function() {
-    message.innerHTML = `tu as cliqué ${compteur} fois !`;
-}
+
 
