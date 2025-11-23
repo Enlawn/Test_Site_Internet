@@ -11,12 +11,25 @@ h1 {
     padding: 25px 0;
 }
 
-p {
-    color: #ff0000;
-    line-height: 1.6;
-    padding: 0 20px;
+h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 100px;
 }
 
+/* Style du paragraphe */
+p {
+    color: #ff0000;
+    text-align: center;
+    font-size: 30px;
+
+    line-height: 1.6;
+    padding: 0 20px;
+
+}
+
+
+/*  Style du bouton */
 button {
     display: block;
     margin: 20px auto;
@@ -27,3 +40,87 @@ button {
 button:hover {
     background-color: #188576;
 }
+
+
+
+
+/* Style pour centrer les boutons */
+
+.center {
+    display: flex;
+    justify-content: center;
+
+/*     align-items: center;
+    width: 50%; */
+
+    gap: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Style des boutons */
+.menu-btn {
+
+    /* Taille des boutons */
+    height: 500px;
+    width: 500px;
+    background-color: #00ffff;
+/*     color: #000000;
+    border: none; */ */
+/*     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px; */
+    /* Changement du curseur au survol */
+    cursor: pointer;
+/*     border-radius: 12px; */
+
+    /* Animation de transition */
+    transition: transform 0.2s;
+}
+/* Effet au survol */
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+/* Style pour les menus déroulants */
+.menu {
+    /* Positionnement absolu pour les menus */
+    position: absolute;
+    /* Centrer horizontalement */
+    top: 250px;        
+    /* Ajustez cette valeur selon vos besoins */
+    left: 50%;
+    /* Centrer le menu */
+    transform: translateX(-50%);
+    /* Style du menu */
+    background: #fafafa;
+    /* Ombre portée pour un effet flottant */
+    border: 1px solid #ccc;
+    /* Espacement interne */
+    padding: 10px;
+    /* Disposition en colonne */
+    display: flex;
+    /*  Flex direction en colonne */
+    flex-direction: column;
+    /* Espacement entre les éléments */
+    width: 200px;
+    /* Ajouter une ombre portée */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Style des liens dans les menus */
+.menu a {
+    color: #00ffff;
+    text-decoration: none;
+    padding : 10px;
+}
+
+/* Effet au survol des liens */
+.menu a:hover {
+    background-color: #f3afaf;
+}
+/* Classe pour cacher les menus */
+.hidden {
+    display: none;
+}
+
