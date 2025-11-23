@@ -20,3 +20,6 @@ btn3.addEventListener("click", () => {
     linuxmenu.classList.toggle("hidden");
 });
 
+btn2.addEventListener("click", () => {
+  console.log("Bouton 2 cliqué !");
+});
