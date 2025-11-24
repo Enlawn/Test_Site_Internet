@@ -25,9 +25,7 @@ p {
 
     line-height: 1.6;
     padding: 0 20px;
-
 }
-
 
 /*  Style du bouton */
 button {
@@ -40,8 +38,6 @@ button {
 button:hover {
     background-color: #188576;
 }
-
-
 
 
 /* Style pour centrer les boutons */
@@ -63,15 +59,9 @@ button:hover {
     /* Taille des boutons */
     height: auto;
     width: auto;
+
     background-color: #666666;
-/*     color: #000000;
-    border: none; */ */
-/*     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px; */
+
     /* Changement du curseur au survol */
     cursor: pointer;
 /*     border-radius: 12px; */
