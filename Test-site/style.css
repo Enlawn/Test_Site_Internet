@@ -23,10 +23,19 @@ p {
     text-align: center;
     font-size: 30px;
 
+    line-height: 2;
+    padding: 0 20px;
+}
+.p1 {
+    color: #0000ff;
+    text-align: center;
+    font-weight: bold;
+
+    font-size: 20px;
+
     line-height: 1.6;
     padding: 0 20px;
 }
-
 /*  Style du bouton */
 button {
     display: block;

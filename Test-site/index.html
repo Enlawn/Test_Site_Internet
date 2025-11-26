@@ -28,12 +28,12 @@
 <p id="Windows">    
         <button id="menu1-btn" > Windows </button>
     <div id = "menu1-btn-content"  >
-        <p> Element 1</p>
-        <p> Element 2</p>
-        <p> Element 3</p>
-        <p> Element 4</p>
+        <p class="p1">Element 1</p>
+        <p class="p1">Element 2</p>
+        <p class="p1">Element 3</p>
+        <p class="p1">Element 4</p>
     </div>
-
+</p>
             <script>
                 document.getElementById("menu1-btn").onclick = function() {
                     var content = document.getElementById("menu1-btn-content");
@@ -44,18 +44,17 @@
                     }
                 }
             </script>
-</p>
-
 
 
 <div id="Linux">
     <button id="menu2-btn" > Linux </button>
         <div id = "menu2-btn-content"  >
-            <p> Element A</p>
-            <p> Element B</p>
-            <p> Element C</p>
-            <p> Element D</p>
+            <p class="p1"> Element A</p>
+            <p class="p1"> Element B</p>
+            <p class="p1"> Element C</p>
+            <p class="p1"> Element D</p>
         </div>
+</div>
             <script>
                 document.getElementById("menu2-btn").onclick = function() {
                     var content = document.getElementById("menu2-btn-content");
@@ -66,7 +65,6 @@
                     }
                 }
             </script>
-</div>
 
 <script src="dist/main.js" defer></script>  <!--// utlisé pour différencier le fichier compilé .js  du dossier d'écriture en ts -->
 </body >
