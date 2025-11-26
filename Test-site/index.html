@@ -1,6 +1,6 @@
 <!DOCTYPE  html >
 <html  lang= "fr">
-
+<!--      ----------------------------------------------------------------------------------------    -->
 <head >
     <meta  charset= " UTF-8 " >
     <title> Ordinateur tu apprendras ! </title>
@@ -8,7 +8,7 @@
     <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" href="style.css" />
 </head >
-
+<!--      ----------------------------------------------------------------------------------------    -->
 <body>
     <h1 > Ordinateur tu utiliseras </h1 >
     <p id = "message">  <!-- paragraphe contenant le message affiché lorsque l'utilisateur clique sur le bouton -->
@@ -25,49 +25,83 @@
     <h2>Choisis le système d'exploitation dont tu veux apprendre les bases : </h2>
 
 
-<p id="Windows">    
-        <button id="menu1-btn" > Windows </button>
-    <div id = "menu1-btn-content"  >
-        <p class="p1">Element 1</p>
-        <p class="p1">Element 2</p>
-        <p class="p1">Element 3</p>
-        <p class="p1">Element 4</p>
+
+
+
+
+
+<!--  Partie menu déroulant en html  ----------------------    -->
+
+
+
+    <!--    Demander comment faire pour avoir comme chemin d'accés des images les fichier contenu sur github!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<div id = "menus" >
+    <div id="Windows">    
+            <button id="menu1-btn" > 
+                <img src="C:\Users\abder\Documents\GitHub\Test_Site_Internet\Test-site\src\Windows_logo.png" alt="Windows Logo" > 
+
+            </button>
+<!--    amélioration : menu qui apparait réduit l'image pour économiser de l'espace  ---------------------------------------------    -->
+
+        <div id = "menu1-btn-content" class = "menu-content" >
+            <p class="p1">Element 1</p>
+            <p class="p1">Element 2</p>
+            <p class="p1">Element 3</p>
+            <p class="p1">Element 4</p>
+        </div>
     </div>
-</p>
+<!--      ----------------------------------------------------------------------------------------    -->
+    <div id="Linux">
+        <button id="menu2-btn" > 
+            <img src="C:\Users\abder\Documents\GitHub\Test_Site_Internet\Test-site\src\linux_logo.png" alt="Linux Logo" class="btn-icon"> 
+
+        </button>
+<!--    amélioration : menu qui apparait réduit l'image pour économiser de l'espace  ---------------------------------------------    -->
+
+            <div id = "menu2-btn-content"  class = "menu-content" >
+                <p class="p1"> Element A</p>
+                <p class="p1"> Element B</p>
+                <p class="p1"> Element C</p>
+                <p class="p1"> Element D</p>
+            </div>
+    </div>
+</div>
+
+
+<!--  Partie scrip = javascript pour la partie dynamique de la page    ------------------------------    -->
+<!-- script pour afficher/cacher les menus : basique -> voué à être améliorer -->
+<!--      amélioration 1 : menu animé, les élements s'affiche progressivement   -->
             <script>
                 document.getElementById("menu1-btn").onclick = function() {
-                    var content = document.getElementById("menu1-btn-content");
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
+                    document.getElementById("menu1-btn-content").classList.toggle("show");
                 }
             </script>
-
-
-<div id="Linux">
-    <button id="menu2-btn" > Linux </button>
-        <div id = "menu2-btn-content"  >
-            <p class="p1"> Element A</p>
-            <p class="p1"> Element B</p>
-            <p class="p1"> Element C</p>
-            <p class="p1"> Element D</p>
-        </div>
-</div>
+<!--      ----------------------------------------------------------------------------------------    -->
             <script>
                 document.getElementById("menu2-btn").onclick = function() {
-                    var content = document.getElementById("menu2-btn-content");
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
+                    document.getElementById("menu2-btn-content").classList.toggle("show");
                 }
             </script>
+<!--      ----------------------------------------------------------------------------------------    -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+<!--      ----------------------------------------------------------------------------------------    -->
 <script src="dist/main.js" defer></script>  <!--// utlisé pour différencier le fichier compilé .js  du dossier d'écriture en ts -->
+
+<!--      ----------------------------------------------------------------------------------------    -->
 </body >
+<!--      ----------------------------------------------------------------------------------------    -->
 </html>
 
 
